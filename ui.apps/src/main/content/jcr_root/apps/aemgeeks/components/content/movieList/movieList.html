@@ -1,0 +1,12 @@
+<sly
+	data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly
+	data-sly-call="${clientLib.css @ categories='aemgeeks.components.movieList'}" />
+<button type="button" id="movieShow">Show the movie List</button>
+<div class="successMsg"></div>
+<div class="items-container" id="items-container"></div>
+
+<sly
+	data-sly-call="${clientLib.js @ categories='aemgeeks.components.movieList'}" />
+
+</sly>
